@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  26 MAR 2018 21:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 MAR 2018 10:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**ChemicalProgrammingBook.tex
-(./ChemicalProgrammingBook.tex
+**ChemicalProgrammingModelsConceptsandDesigns.tex
+(./ChemicalProgrammingModelsConceptsandDesigns.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
@@ -750,8 +750,9 @@ File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
 \pgfarrowlength=\dimen161
 \pgfarrowwidth=\dimen162
 \pgfarrowlinewidth=\dimen163
-))) (./ChemicalProgrammingBook.aux)
-\openout1 = `ChemicalProgrammingBook.aux'.
+)))
+No file ChemicalProgrammingModelsConceptsandDesigns.aux.
+\openout1 = `ChemicalProgrammingModelsConceptsandDesigns.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
@@ -765,7 +766,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
-
 ABD: EveryShipout initializing macros
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -841,20 +841,21 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./ChemicalProgrammingBook.aux) ) 
+(./ChemicalProgrammingModelsConceptsandDesigns.aux) ) 
 Here is how much of TeX's memory you used:
- 13416 strings out of 492995
- 274124 string characters out of 6132704
- 305239 words of memory out of 5000000
+ 13414 strings out of 492995
+ 274208 string characters out of 6132704
+ 305261 words of memory out of 5000000
  16705 multiletter control sequences out of 15000+600000
  8584 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 61i,6n,84p,467b,199s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr17.pfb>
-Output written on ChemicalProgrammingBook.pdf (1 page, 28465 bytes).
+ 61i,6n,84p,487b,199s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on ChemicalProgrammingModelsConceptsandDesigns.pdf (1 page, 2903
+6 bytes).
 PDF statistics:
  23 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream

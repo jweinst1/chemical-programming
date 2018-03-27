@@ -1,5 +1,9 @@
 # chemical-programming
 
-*A book on a computation model for a chemical programming paradigm*
+*A book discussing the concepts and designs of chemical programming*
 
-This repo contains a book on a chemical programming model, designed to illustrate a paradigm of programming the focusues on the principles of programming with chemical-like reactions.
+This book illustrates a paradigm of programming the focusues on the principles of programming with chemical-like reactions.
+
+ The book discusses the concepts of chemical programming, such as compounds, elements, and reactivity. It defines chemical modeling that incorporates fundamental programming constructs, such as integers, booleans, strings, and much more.
+
+####`Author: Joshua Weinstein`
