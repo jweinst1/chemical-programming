@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 MAR 2018 15:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  28 MAR 2018 10:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -846,27 +846,35 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout4 = `ChemicalProgrammingModelsConceptsandDesigns.toc'.
 
  [2]
-(./sections/Introduction.tex) [3]
-(./ChemicalProgrammingModelsConceptsandDesigns.aux) ) 
+(./sections/Introduction.tex
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+ []
+
+) [3] (./ChemicalProgrammingModelsConceptsandDesigns.aux) ) 
 Here is how much of TeX's memory you used:
- 13429 strings out of 492995
- 274543 string characters out of 6132704
- 306261 words of memory out of 5000000
- 16709 multiletter control sequences out of 15000+600000
- 9497 words of font info for 36 fonts, out of 8000000 for 9000
+ 13441 strings out of 492995
+ 274670 string characters out of 6132704
+ 308261 words of memory out of 5000000
+ 16718 multiletter control sequences out of 15000+600000
+ 11542 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 61i,6n,84p,583b,199s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on ChemicalProgrammingModelsConceptsandDesigns.pdf (3 pages, 595
-05 bytes).
+ 61i,6n,84p,717b,199s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2
+017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/20
+17/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/201
+7/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on ChemicalProgrammingModelsConceptsandDesigns.pdf (3 pages, 956
+91 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 53 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
