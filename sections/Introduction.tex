@@ -1,14 +1,22 @@
 % Introduction Section
 
 \section{Introduction}
-
+% \addcontentsline{toc}{section}{Introduction}
 \paragraph{   } Chemical Programming is a paradigm of programming that is modeled after the mechanics of chemical reactions. This style focuses on utilizing the features of chemical components, such as atoms, elements, compounds and reactions. The intention of this programming paradigm is to allow the functionality and mechanisms in chemical processes to be applied to computational values. Chemical computation permits highly customizable abstraction over traditional types like booleans, integers, and strings.
 % Paragraph on useful versus not useful parts of chemistry in CS
 \par Purely modeling chemical reactions is not the goal, rather defining and modeling the components of chemistry to make them useful in programming. Computer science and chemistry are well defined, yet very different fields. The fashions and organizations of chemical reactions provide unique interfaces for program design. However, moles, molecular orbitals, and energy levels are not fruitful or applicable to abstract program designs, or a programming paradigm. Another goal in this book is to illustrate models and definitions such that components of chemicals can exist more fruitfully as a programming construct. 
 
 \par Traditionally, programming languages use typed values or data, such as integers, booleans, or characters. These are commonly referred to as \textit{primitive} types. Such a type is normally the most basic level of abstraction in a programming language. They cannot be further decomposed into simpler types. The higher level abstractions such as functions or classes are composed of primitive types, which allows the creation of \textit{user-defined} types. Similarly, elements, the most basic \textit{type} of matter, exists in it's smallest form as an atom, which compose molecules and more sophisticated compounds.
 
-\par Some fundamentals in chemistry are rather limiting when judged in a computational perspective. Reactions usually require an activation energy, $E_a$, in order to being and transition from reactants to products. This energy arises from a combination of heat, pressure, acidity, and other environment factors. \break
-\begin{equation}
-A, B \longrightarrow AB
-\end{equation}
+\par Some fundamentals in chemistry are rather limiting when judged in a computational perspective. Reactions usually require an activation energy, $E_a$, in order to being and transition from reactants to products. This energy arises from a combination of heat, pressure, acidity, and other environment factors. This pushes the reactants toward a transition state, allowing the reaction to occur.  \break
+\begin{figure}[h]
+    \begin{align*}
+          A + B \xlongrightarrow{e} AB \\
+          B + C \rightleftharpoons BC
+     \end{align*}
+     \caption{A chemical reaction with energy, and a reversible reaction}
+\end{figure}
+
+\par If a set of reactants does not exist in an environment or under conditions \textit{favorable} to the products, a reaction will not occur. Similarly, a reaction can reverse itself if conditions or available energy favor the reactants. This flow of requirements and barriers does not truly relate to computational models, as restrictions in programming paradigms are self-imposed, they are not technological or physical restrictions. To adhere to the loose abstractions that a chemical program could offer, these restrictions from actual chemistry are not obeyed. 
+
+\par One of the main difference between chemistry and chemical programming is everything is essentially a reactant. There are no \textit{reagents}, as anything could be use to produce different products. This book centers on models that utilize reaction mechanisms by abstracting the fundamentals behind them, while leaving out probabilistic or indefinite factors, such as those discussed above.
