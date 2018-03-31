@@ -19,4 +19,24 @@
 
 \par If a set of reactants does not exist in an environment or under conditions \textit{favorable} to the products, a reaction will not occur. Similarly, a reaction can reverse itself if conditions or available energy favor the reactants. This flow of requirements and barriers does not truly relate to computational models, as restrictions in programming paradigms are self-imposed, they are not technological or physical restrictions. To adhere to the loose abstractions that a chemical program could offer, these restrictions from actual chemistry are not obeyed. 
 
-\par One of the main difference between chemistry and chemical programming is everything is essentially a reactant. There are no \textit{reagents}, as anything could be use to produce different products. This book centers on models that utilize reaction mechanisms by abstracting the fundamentals behind them, while leaving out probabilistic or indefinite factors, such as those discussed above.
+% Definite transitions and diff paragraph
+\par One of the main differences between chemistry and chemical programming is that reactions are \textit{definite} transitions. A reaction can occur in a mutable or immutable state, but a reactant cannot spontaneously revert or undergo more reactions. The useful part of loose abstraction is giving a programmer more control over occurring events. \textit{Conservation} of resources like mass, does not literally apply in chemical programming. New data is simply written to new blocks of memory in any computer, just like new objects are created in object-oriented programming languages. The return to some equilibrium or entropy is not required.
+% Element discussion
+\par In chemistry, reactions deal with one or more molecules transforming into new molecules. As discussed in later chapters, the term \textit{compounds} is used exclusively in this text, since a value in chemical programming does not possess real physical size. Similarly to real molecules, compounds are composed of one or more \textit{elements}. A 32-bit integer, for example, is an element. The number zero, of any size, can also be an element. Like mentioned earlier, think of primitive types in other paradigms as equivalent to elements.
+
+\par An element can be modeled in a structured or unstructured context. The structure, or \textit{order} of the elements in a structure may or may not matter in a particular use case. Modeling for both structured or unstructured compounds can provide an array of possible reactions and computations in chemical programming. Both approaches will be described later on.
+
+\begin{figure}[h]
+   \begin{align*}
+   B_2C_2
+   \end{align*}
+   \begin{center}
+       \begin{tikzcd}[every arrow/.append style={dash}]
+          &B \arrow[d] \arrow[r] &C \arrow[d] \\
+          &B \arrow[r] &C
+        \end{tikzcd}
+     \end{center}
+     \caption{Compounds in structured versus unstructured forms}
+\end{figure}
+
+\par Lastly, and most importantly, the purpose in using chemical phenomena as a backbone to programming is to allow the application of \textit{self-organization}. Nearly any language used today only allows instructed organization of a program.
