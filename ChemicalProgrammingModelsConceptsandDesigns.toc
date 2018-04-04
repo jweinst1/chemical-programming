@@ -4,5 +4,9 @@
 \contentsline {paragraph}{ }{5}
 \contentsline {chapter}{\numberline {2}Sets}{9}
 \contentsline {section}{\numberline {2.1}What is a set?}{9}
-\contentsline {chapter}{\numberline {3}Compounds}{11}
-\contentsline {paragraph}{ }{11}
+\contentsline {subsection}{\numberline {2.1.1}Intersection}{10}
+\contentsline {subsection}{\numberline {2.1.2}Unions}{10}
+\contentsline {subsection}{\numberline {2.1.3}Equality and Difference}{11}
+\contentsline {section}{\numberline {2.2}Multisets}{11}
+\contentsline {chapter}{\numberline {3}Compounds}{13}
+\contentsline {paragraph}{ }{13}

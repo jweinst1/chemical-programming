@@ -27,4 +27,85 @@ E &\equiv S, \\
 E &\equiv \{E\}
 \end{align*}
 
-Similarly, if an element is not in some set, this is written as $E \notin S$.
+A set can be contained within some other set. If this is true, a set is a subset of another set. Let us have one set $s = \{a, b\}$, and another set, $S = \{a, b, c\}$.
+% Expression of subset 
+$$
+\forall x  \{\exists x \in s \rightarrow \exists x \in S \}
+$$
+
+where x is an element, this can be described more conveniently as
+
+$$
+s \subseteq S
+$$
+
+A set that has no elements is called an empty set, denoted $\emptyset$. A set is an empty set when,
+
+$$
+\forall x \rightarrow \neg \exists x \in s
+$$
+
+
+If an element is not in some set, this is written as $E \notin S$. A distinct element, $E_i$ can have multiple set memberships. $E_i \in S_1 \land E_i \in S_2$ implies a membership in the first and second set. This is also called having membership in the intersection of both sets.
+
+\subsection{Intersection}
+
+An intersection is a set that is composed of the elements present in two or more sets. It is a separate set expressed as the elements present in both some set $S_a$ and $S_b$. It is denoted with a $\cap$, such that,
+
+$$
+S_a \cap S_b = \{x \mid x \in S_a \land x \in S_b\}
+$$
+
+For the intersection of an arbitrary number of sets, or for a collection, $C$, whose elements are entirely sets, we can write
+% equation for arbitrary intersection
+$$
+\Bigl\{ x \in \bigcap\limits_{S \in C} S \Bigr\}
+$$
+
+Intersections are also a way in which two sets' equality can be determined. If the intersection of two sets is an empty set, then those two sets share no elements and are \textit{completely} unequal, $S_a \cap S_b = \emptyset$. Conversely, if the set of elements in one set OR the other set is equivalent to the intersection of those two sets, the sets are equal to each other. Elements that reside in either one set or another is called a \textit{union}.
+
+\subsection{Unions}
+
+A union is a set that represents the elements of two or more sets. It is denoted with a $\cup$ Specifically,
+
+%union definition
+$$
+S_a \cup S_b = \{ x \mid x \in S_a \lor x \in S_b\}
+$$ 
+
+The union, in the case of two sets, $S_a$ and $S_b$ ,  is composed of three \textit{distinct} sets. The third set, aside from the elements in $S_a$ or $S_b$ is the intersection, $S_a \cap S_b$. The union, in this form, is expressed as $S_a \cup S_b = \{S_a, S_b, (S_a \cap S_b)\}$. The membership of $S_a$ and $S_b$ and the exclusion from the intersection is called the symmetric difference of sets. Symmetric difference is the opposite of intersections, it judges how \textit{unlike} two sets are.
+
+\subsection{Equality and Difference}
+
+Two sets are equal if and only if their intersection is equal to their union.
+
+$$
+S_a = S_b \iff S_a \cap S_b = S_a \cup S_b
+$$
+
+This is true since the union of two sets is the set of all members across both of them, if every member of either set is in both sets, there is no such member that exists in one set and not the other. This idea can also be used to define set inequality. 
+
+A set $S_a$ is not equal to a set $S_b$ when at least one element is not present in both sets,
+
+\begin{align}
+S_a &\neq S_b \iff \exists x \in S_a, x \notin S_b \\
+S_a &\neq S_b \iff \exists x \in S_a \cup S_b, x \notin S_a \cap S_b
+\end{align}
+
+The set of elements in some set $S_a$ \textit{or} $S_b$ but not both is the symmetric difference of the sets, denoted with a $\triangle$
+
+$$
+S_a \triangle S_b = \{ x \mid x \notin (S_a \cap S_b) \land x \in S_a \lor x \in S_b  \}
+$$
+
+To relate the idea of set equality and difference, the intersection of two sets and their symmetric difference are \textit{opposites}. A ratio can be established between the count of two sets as a degree of equality, $Q_e$.
+
+$$
+Q_e = \frac{S_a \cap S_b}{S_a \triangle S_b}
+$$ 
+
+If $Q_e$ is 1, there are no members in the symmetric difference, and every member of the union is also a member of the intersection. If $Q_e$ is 0, this means there are no members in the intersection, and every member of the union is a member of the symmetric difference. The varying degrees between 1 or 0 can determine how similar a set is to another.
+
+\section{Multisets}
+
+Previously, we discussed sets with distinct collections of elements, such that for every unique member, only one of that member is present in the set.
