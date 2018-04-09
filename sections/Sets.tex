@@ -108,4 +108,77 @@ If $Q_e$ is 1, there are no members in the symmetric difference, and every membe
 
 \section{Multisets}
 
-Previously, we discussed sets with distinct collections of elements, such that for every unique member, only one of that member is present in the set.
+Previously, we discussed sets with distinct collections of elements, such that for every unique member, only one of that member is present in the set. A basic set cannot contain multiplicities of it's members, while a multiset can. All basic sets can be expressed as multisets where each member has a multiplicity of 1. If $S = \{E_1 \dots E_n\}$ is a basic set, then a multiset can be expressed as:
+
+% multiset definition
+$$
+M = \Bigl\{E^{m(e_1)}_1, \dots E^{m(e_n)}_n\Bigr\}
+$$
+
+where $m(e)$ is the multiplicity of some element $e$ in the set. An example multiset can also be written more simply as $\{a^2, b^1\}$, which contains two of the element $a$ and one of the element $b$. There are many varieties of multisets, as even sets with the same types of elements can carry different multiplicities.  Multisets are particularly important in chemical programming as they mirror the representation of a chemical compound, such as water, $H_2O$. A molecule of water can be expressed as a multiset with two hydrogen atoms and one oxygen atom.
+
+\subsection{Membership}
+
+With basic sets, membership is defined as a simple boolean value, whether or not a set contains some element,
+ % basic member sets
+$$
+x \in S
+$$
+
+In a multiset, membership is an integer value, where 0 indicates no membership, and 1 or more corresponds to the element's multiplicity.
+% multiset membership
+$$
+x \in M \iff \exists x : m(x) \geq 1
+$$
+
+Conversely, not being in the multiset is defined as the multiplicity being zero, $ x \notin M \iff m(x) = 0$. The multiplicity of an element also determines how much of the set it represents. An element with the highest multiplicity in the set is the most common element. An element is the \textit{mode} of the multiset if,
+
+$$
+x = mode(M) \iff \forall e \in M \rightarrow m(e) < m(x)
+$$
+
+When all the members of a multiset have the same multiplicity, there is no mode. The judgement of membership based on a numeric value rather than a boolean value can also be expressed as a function, This function's domain is any possible member, and it's range is the multiplicity of the input element,
+
+$$
+M_f : e \rightarrow m
+$$
+
+An \textit{empty} multiset would always have a range of zero, such that,
+
+$$
+\emptyset = M_f : e \rightarrow 0
+$$
+
+However, for the purposes of chemical programming, multisets are best represented as collections rather than functions.
+
+\subsection{Operations}
+
+Multisets can undergo several operations that basic sets cannot. Basic set operations and their definitions such as a union or an intersection don't apply well to multisets, due to the absence of the idea of multiplicity. Such as with equality, two multisets could have the same members yet different multiplicities of each member.
+
+The first operation of multisets is addition. The addition operation results in a new set where the multiplicities and variety of each member of both multisets are placed into one. The operation is binary and denoted with a $\uplus$.
+
+$$
+M_1 \uplus M_2 = \{ x, y \mid (x, m(x)) \in M_1, (y, m(y)) \in M_2 \}
+$$
+
+For example, if $M_1 = \{a, a, b\}$, and $M_2 = \{c, c, b\}$, the addition set is, $\{a, a, b, b, c, c\}$. Multisets can also be subtracted from one another. The subtraction of two multisets mirrors the symmetric difference of two basic sets. It is a multiset of the elements, that do not have equal multiplicities between some multiset $M_1$ and multiset $M_2$.
+
+% multiset difference
+$$
+M_1 - M_2 = \{ (x, m(x)) \mid m_1(x) - m_2(x) \neq 0 \rightarrow x \in M_1, x \in M_2 \}
+$$
+
+Two multisets are equal to each other if and only if their difference set is the empty multiset.
+
+% definition of multiset equality 
+$$
+M_1 = M_2 \iff M_1 - M_2 = \emptyset
+$$
+
+Similar to basic sets,  the size of the difference set indicates how alike or different two multisets are. The larger the difference set, the more elements that $M_1$ and $M_2$ \textit{do not} share or have the same number of. The smaller the difference set, the more equal multiplicities shared between $M_1$ and $M_2$.
+
+\section{Nested Sets}
+
+Sets can contain members that are also sets themselves. Such a set that is contained within another set can be treated as a unique, distinct value, as opposed to a collection. Normally, sets are not regarded singularly. The idea of a subset, such as $S_1 \subseteq S_2$ reads that all the elements in $S_1$ are also in $S_2$. Yet this does not handle the case of a set with all the same members as $S_1$ being contained in $S_2$. For basic set membership, the following would hold true:
+
+
